@@ -1,0 +1,9 @@
+<h1>home</h1>
+{% for producto in productos %}
+    <a href="{% url 'productos' producto.id %}">
+        <h2>{{ producto.nombre }}</h2>
+    </a>
+    <p>{{ producto.descripcion }}</p>
+    <p>{{ producto.percio }}</p>
+{% endfor %}
+

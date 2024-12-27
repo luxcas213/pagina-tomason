@@ -1,0 +1,10 @@
+<h1>producto especifico</h1>
+<h2>{{ producto.nombre }}</h2>
+<p>{{ producto.descripcion }}</p>
+<p>{{ producto.precio }} $</p>
+<img src="{{ producto.imagen.url }}" alt="{{ producto.nombre }}">
+<a href="{% url 'home' %}">
+    <button type="button">
+        Volver
+    </button>
+</a>
